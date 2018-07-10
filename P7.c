@@ -1,3 +1,5 @@
+//Gabriel Resende Soares
+//11721ECP011
 #include<stdio.h>
 
 int analise(int m ,int n)
