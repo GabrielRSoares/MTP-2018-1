@@ -103,7 +103,7 @@ int binario (int n, int e)
 	 
 }
     
-     void nte(int r)
+     int nte(int r)
      {
 	     int i ,p ,a = 0 ,X[32],Y[32],f;
 	     
