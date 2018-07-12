@@ -51,6 +51,45 @@ int binario2 (int m, int e)
 	
 }
 
+int nte(int r)
+     {
+	     int i ,p ,a = 0 ,X[32],Y[32],f;
+	     
+	     p = ~r;
+	     printf(":%d(",p);
+	     
+	     if(p < 0)
+	     {
+	     	p = p *-1;
+	     	a = 1;
+		  }  
+	     for(i = 0 ; i < 32 ; i++)
+	    { 
+		 X[i] = p%2; 
+	     p = p/2;
+	    }
+	 
+	     for(f = 31 , i = 0  ;f >=0 ; f-- , i++)
+	    {
+		 Y[i] = X[f] ;
+		  
+		 if(a == 1){
+		      if(Y[i] == 1){
+			     a = 0;
+	             Y[i] = 0;
+				 }
+			   else if(Y[i] == 0)
+			     Y[i] = 1;
+				    	    
+		 printf("%d", Y[i]);
+	     }
+	      else 
+	         printf("%d", Y[i]);
+	}
+		  
+         	 
+	     printf (")");
+     } 
 int binario (int n, int e)
 {
 
@@ -99,49 +138,9 @@ int binario (int n, int e)
 	 else if(e = 1)
 	     return nte(r);
 	 
-	      	   
-	 
 }
     
-     int nte(int r)
-     {
-	     int i ,p ,a = 0 ,X[32],Y[32],f;
-	     
-	     p = ~r;
-	     printf(":%d(",p);
-	     
-	     if(p < 0)
-	     {
-	     	p = p *-1;
-	     	a = 1;
-		  }  
-	     for(i = 0 ; i < 32 ; i++)
-	    { 
-		 X[i] = p%2; 
-	     p = p/2;
-	    }
-	 
-	     for(f = 31 , i = 0  ;f >=0 ; f-- , i++)
-	    {
-		 Y[i] = X[f] ;
-		  
-		 if(a == 1){
-		      if(Y[i] == 1){
-			     a = 0;
-	             Y[i] = 0;
-				 }
-			   else if(Y[i] == 0)
-			     Y[i] = 1;
-				    	    
-		 printf("%d", Y[i]);
-	     }
-	      else 
-	         printf("%d", Y[i]);
-	}
-		  
-         	 
-	     printf (")");
-     } 
+     
 	   
 void eehh (int n , int m)
 {
