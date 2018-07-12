@@ -16,25 +16,25 @@ int main()
 		{
 		case 1:
 			printf ("Digite o numero em binario: \n");
-			scanf("%s",&vet); 
+			scanf("%s",vet); 
 			getchar ();
 			bin_dec(vet);
 			break;
 		case 2:
 			printf ("Digite o numero em binario: \n");
-			scanf("%s",&vet); 
+			scanf("%s",vet); 
 			getchar ();
 			bin_hex(vet);
 			break;
 		case 3:
 			printf ("Digite o numero em hexadecimal: \n");
-			scanf("%s",&vet); 
+			scanf("%s",vet); 
 			getchar();
 			hex_dec(vet);
 			break;
 		case 4:
 			printf ("Digite o numero em hexadecimal: \n");
-			scanf("%s",&vet); 
+			scanf("%s",vet); 
 			getchar();
 			hex_bin(vet);
 			break;
@@ -52,7 +52,7 @@ int main()
 			break;
 		case 7:
 			printf ("Digite o numero em octal: \n");
-			scanf("%s",&vet); 
+			scanf("%s",vet); 
 			getchar();
 			octal_dec(vet);
 			break;
