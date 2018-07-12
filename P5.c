@@ -73,8 +73,8 @@ do{
 			   while(1)
 			   {
 			   	scanf("%d%c",&vec[o],sec);
-			   	     if(sec != ',')
-			   	        break;
+			   	    // if(sec != ',')
+			   	      //  break;
 			   	 getchar();
 			   	 o++;     
 			   }
