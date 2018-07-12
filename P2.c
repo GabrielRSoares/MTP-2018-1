@@ -4,72 +4,6 @@
 #include <stdio.h>
 
 
-int main()
-{
-	char vet[200];
-	int Z,n,x;
-
-		printf("\nPrograma de conversoes, voce deseja converter:\n1. Binario para Decimal\n2. Binario para Hexadecimal\n3. Hexadecimal para Decimal\n4. Hexadecimal para Binario\n5. Decimal para Binario \n6. Decimal para Hexadecimal\n7. Octal para Decimal\n8. Decimal para Octa\n");
-		
-		scanf ("%d",&Z);
-		switch (Z)
-		{
-		case 1:
-			printf ("Digite o numero em binario: \n");
-			scanf("%s",vet); 
-			getchar ();
-			bin_dec(vet);
-			break;
-		case 2:
-			printf ("Digite o numero em binario: \n");
-			scanf("%s",vet); 
-			getchar ();
-			bin_hex(vet);
-			break;
-		case 3:
-			printf ("Digite o numero em hexadecimal: \n");
-			scanf("%s",vet); 
-			getchar();
-			hex_dec(vet);
-			break;
-		case 4:
-			printf ("Digite o numero em hexadecimal: \n");
-			scanf("%s",vet); 
-			getchar();
-			hex_bin(vet);
-			break;
-		case 6:
-			printf ("Digite o numero em decimal: \n");
-			scanf("%d",&n); 
-			getchar();
-			dec_hex(n);
-			break;
-		case 5:
-			printf ("Digite o numero em decimal: \n");
-			scanf("%d",&n); 
-			getchar();
-			dec_bin(n);
-			break;
-		case 7:
-			printf ("Digite o numero em octal: \n");
-			scanf("%s",vet); 
-			getchar();
-			octal_dec(vet);
-			break;
-		case 8:
-			printf("Digite o numero em decimal: \n");
-			scanf("%d",&n); 
-			getchar();
-			dec_octal(n);
-			break;
-		default:
-			printf ("\n codigo invalido");
-			break;		
-		}
-	
-	return 0;
-}	
-
 void bin_dec(char v[])
 {
 	int inv[256],f,i,soma=0,p,n;
@@ -244,3 +178,69 @@ void dec_octal(int n)
 	for(f=i-1;f>=0;f--){
 		printf("%d", inv[f]);}
 }
+
+int main()
+{
+	char vet[200];
+	int Z,n,x;
+
+		printf("\nPrograma de conversoes, voce deseja converter:\n1. Binario para Decimal\n2. Binario para Hexadecimal\n3. Hexadecimal para Decimal\n4. Hexadecimal para Binario\n5. Decimal para Binario \n6. Decimal para Hexadecimal\n7. Octal para Decimal\n8. Decimal para Octa\n");
+		
+		scanf ("%d",&Z);
+		switch (Z)
+		{
+		case 1:
+			printf ("Digite o numero em binario: \n");
+			scanf("%s",vet); 
+			getchar ();
+			bin_dec(vet);
+			break;
+		case 2:
+			printf ("Digite o numero em binario: \n");
+			scanf("%s",vet); 
+			getchar ();
+			bin_hex(vet);
+			break;
+		case 3:
+			printf ("Digite o numero em hexadecimal: \n");
+			scanf("%s",vet); 
+			getchar();
+			hex_dec(vet);
+			break;
+		case 4:
+			printf ("Digite o numero em hexadecimal: \n");
+			scanf("%s",vet); 
+			getchar();
+			hex_bin(vet);
+			break;
+		case 6:
+			printf ("Digite o numero em decimal: \n");
+			scanf("%d",&n); 
+			getchar();
+			dec_hex(n);
+			break;
+		case 5:
+			printf ("Digite o numero em decimal: \n");
+			scanf("%d",&n); 
+			getchar();
+			dec_bin(n);
+			break;
+		case 7:
+			printf ("Digite o numero em octal: \n");
+			scanf("%s",vet); 
+			getchar();
+			octal_dec(vet);
+			break;
+		case 8:
+			printf("Digite o numero em decimal: \n");
+			scanf("%d",&n); 
+			getchar();
+			dec_octal(n);
+			break;
+		default:
+			printf ("\n codigo invalido");
+			break;		
+		}
+	
+	return 0;
+}	
