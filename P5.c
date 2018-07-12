@@ -45,9 +45,9 @@ do{
               printf("\nMensagem codificada: ");
      	 	 for(i = 0 ;s[i] != '\0' ;i+=4)
 			{
-				  pi = *((int*)(&s[i]));
+				  pi = ((int*)(&s[i]));
 				 //ve[i] = *pi ;	     
-				 printf("%d",pi);
+				 printf("%d",*pi);
 	
 			  	 printf(", ");
 				     
@@ -72,7 +72,7 @@ do{
 			   printf("\nEntre com os numeros para ser descodificados\n");
 			   while(1)
 			   {
-			   	scanf("%d%c",&vec[o],&sec);
+			   	scanf("%d%c",&vec[o],sec);
 			   	     if(sec != ',')
 			   	        break;
 			   	 getchar();
